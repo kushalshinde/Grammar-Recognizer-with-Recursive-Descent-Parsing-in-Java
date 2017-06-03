@@ -1,0 +1,5 @@
+//This grammar has a rule-set for a terminal
+
+TERMINAL
+  : //empty
+  ;

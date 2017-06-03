@@ -1,0 +1,4 @@
+//This grammar contains a non-terminal without any rule-set
+s
+  : a
+  ;

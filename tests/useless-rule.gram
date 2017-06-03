@@ -1,0 +1,9 @@
+//This grammar contains a useless rule
+
+s
+  : s
+  ;
+
+s1
+  : //empty
+  ;

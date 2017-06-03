@@ -1,0 +1,20 @@
+//Grammar for how grammars are described
+grammar
+  : EOF
+  | ruleSet grammar
+  ;
+
+ruleSet
+  : NON_TERMINAL COLON rightHandSide restRightHandSides
+  ;
+
+restRightHandSides
+  : SEMI
+  | PIPE rightHandSide restRightHandSides
+  ;
+
+rightHandSide
+ : TERMINAL rightHandSide
+ | NON_TERMINAL rightHandSide
+ | //empty
+ ;

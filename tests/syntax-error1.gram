@@ -1,0 +1,5 @@
+//This grammar is missing a semi-colon
+s
+  : TERM1
+
+  

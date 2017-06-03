@@ -1,0 +1,7 @@
+//This grammar has a rule-set without any rules
+s
+  : a
+  ;
+
+a
+  ;

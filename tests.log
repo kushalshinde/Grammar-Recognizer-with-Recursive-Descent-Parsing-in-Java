@@ -1,0 +1,24 @@
+$ for f in tests/*.gram
+> do
+> echo "*** $f ***"
+> java -cp target/prj1.jar edu.binghamton.cs571.GrammarStats $f
+> done
+*** tests/arith.gram ***
+5 22 11
+*** tests/empty.gram ***
+no ruleSets found
+*** tests/grammar.gram ***
+4 12 7
+*** tests/missing-rule.gram ***
+no rules for [a]
+*** tests/multi-rule.gram ***
+tests/multi-rule.gram:7:0: multiple rule-sets for nonTerm1;first defined at tests/multi-rule.gram:3:0
+*** tests/syntax-error1.gram ***
+tests/syntax-error1.gram:5:3: syntax error at '<EOF>'
+*** tests/syntax-error2.gram ***
+tests/syntax-error2.gram:7:2: syntax error at ';'
+*** tests/syntax-error3.gram ***
+tests/syntax-error3.gram:3:0: syntax error at 'TERMINAL'
+*** tests/useless-rule.gram ***
+no uses of rules for [s1]
+$

@@ -1,0 +1,9 @@
+//This grammar contains multiple rule-sets for the same non-terminal
+
+nonTerm1
+  : A nonTerm1 A
+  | B
+  ;
+nonTerm1
+  : //empty
+  ;
